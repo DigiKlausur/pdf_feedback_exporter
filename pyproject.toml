@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdf_feedback_exporter"
+description = "An exporter to turn nbgrader html feedback into PDF feedback files"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+  { name = "Tim Metzler", email = "tim.metzler@h-brs.de" },
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "beautifulsoup4",
+    "traitlets",
+    "pdfkit",
+    "PyPDF2",
+    "matplotlib",
+    "nbgrader"
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/Digiklausur/pdf_feedback_exporter"
+Issues = "https://github.com/Digiklausur/pdf_feedback_exporter/issues"
+Source = "https://github.com/Digiklausur/pdf_feedback_exporter"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "hatchling"
+]
+
+[tool.hatch.version]
+path = "pdf_feedback_exporter/__version__.py"
