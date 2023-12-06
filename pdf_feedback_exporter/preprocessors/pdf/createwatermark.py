@@ -1,15 +1,12 @@
-import os
+from .base import PDFPreprocessor
 from typing import Dict
-
+from traitlets import Unicode
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
-from traitlets import Unicode
-
-from .base import PDFPreprocessor
+import os
 
 
 class CreateWatermark(PDFPreprocessor):
-
     language = Unicode("en", help="The language used for the watermark").tag(
         config=True
     )

@@ -1,9 +1,7 @@
-import os
-from typing import Dict
-
-import pdfkit
-
 from .base import PDFPreprocessor
+from typing import Dict
+import os
+import pdfkit
 
 
 class ConvertHTML2PDF(PDFPreprocessor):
@@ -12,7 +10,11 @@ class ConvertHTML2PDF(PDFPreprocessor):
         pdfkit.from_file(
             resources["feedback_html"],
             pdf_path,
-            options={"javascript-delay": 2000, "no-stop-slow-scripts": None},
+            options={
+                "javascript-delay": 2000,
+                "no-stop-slow-scripts": None,
+                "enable-local-file-access": "",
+            },
         )
         resources.update(dict(pdf=pdf_path))
         return resources
