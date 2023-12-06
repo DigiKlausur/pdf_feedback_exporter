@@ -22,10 +22,10 @@ classifiers=[
 dependencies = [
     "beautifulsoup4",
     "traitlets",
+    "e2xcore",
     "pdfkit",
     "PyPDF2",
     "matplotlib",
-    "nbgrader"
 ]
 dynamic = ["version"]
 
