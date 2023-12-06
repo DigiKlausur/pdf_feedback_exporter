@@ -1,8 +1,6 @@
-from typing import Dict, Tuple
-
-from bs4 import BeautifulSoup as Soup
-
 from .base import HTMLPreprocessor
+from typing import Tuple, Dict
+from bs4 import BeautifulSoup as Soup
 
 
 class ChangeScoreColor(HTMLPreprocessor):
