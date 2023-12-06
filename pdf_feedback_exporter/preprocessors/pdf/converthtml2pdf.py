@@ -12,7 +12,11 @@ class ConvertHTML2PDF(PDFPreprocessor):
         pdfkit.from_file(
             resources["feedback_html"],
             pdf_path,
-            options={"javascript-delay": 2000, "no-stop-slow-scripts": None},
+            options={
+                "javascript-delay": 2000,
+                "no-stop-slow-scripts": None,
+                "enable-local-file-access": "",
+            },
         )
         resources.update(dict(pdf=pdf_path))
         return resources

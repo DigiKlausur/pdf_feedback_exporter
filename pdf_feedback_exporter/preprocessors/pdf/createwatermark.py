@@ -9,7 +9,6 @@ from .base import PDFPreprocessor
 
 
 class CreateWatermark(PDFPreprocessor):
-
     language = Unicode("en", help="The language used for the watermark").tag(
         config=True
     )
