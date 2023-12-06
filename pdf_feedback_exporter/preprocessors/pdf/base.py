@@ -1,6 +1,7 @@
-from traitlets.config import LoggingConfigurable
 from abc import abstractmethod
 from typing import Dict
+
+from traitlets.config import LoggingConfigurable
 
 
 class PDFPreprocessor(LoggingConfigurable):

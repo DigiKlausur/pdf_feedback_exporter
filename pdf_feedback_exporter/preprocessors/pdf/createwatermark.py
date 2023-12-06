@@ -1,9 +1,11 @@
-from .base import PDFPreprocessor
+import os
 from typing import Dict
-from traitlets import Unicode
+
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
-import os
+from traitlets import Unicode
+
+from .base import PDFPreprocessor
 
 
 class CreateWatermark(PDFPreprocessor):

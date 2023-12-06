@@ -1,7 +1,9 @@
-from .base import PDFPreprocessor
-from typing import Dict
 import os
+from typing import Dict
+
 import pdfkit
+
+from .base import PDFPreprocessor
 
 
 class ConvertHTML2PDF(PDFPreprocessor):

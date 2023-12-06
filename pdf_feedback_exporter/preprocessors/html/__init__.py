@@ -1,9 +1,9 @@
-from .embedimages import EmbedImages
-from .prettifytables import PrettifyTables
 from .changescorecolor import ChangeScoreColor
 from .changetotalscore import ChangeTotalScore
-from .makecolorsimportant import MakeColorsImportant
+from .embedimages import EmbedImages
 from .fixmathlinebreaks import FixMathLineBreaks
+from .makecolorsimportant import MakeColorsImportant
+from .prettifytables import PrettifyTables
 
 __all__ = [
     "ChangeScoreColor",

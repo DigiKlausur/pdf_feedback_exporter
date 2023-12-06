@@ -1,7 +1,8 @@
-from traitlets.config import LoggingConfigurable
 from abc import abstractmethod
-from typing import Tuple, Dict
+from typing import Dict, Tuple
+
 from bs4 import BeautifulSoup as Soup
+from traitlets.config import LoggingConfigurable
 
 
 class HTMLPreprocessor(LoggingConfigurable):

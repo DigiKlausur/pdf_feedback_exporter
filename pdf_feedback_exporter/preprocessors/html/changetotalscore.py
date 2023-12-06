@@ -1,8 +1,10 @@
 import re
-from .base import HTMLPreprocessor
-from typing import Tuple, Dict
+from typing import Dict, Tuple
+
 from bs4 import BeautifulSoup as Soup
 from traitlets import Float
+
+from .base import HTMLPreprocessor
 
 
 class ChangeTotalScore(HTMLPreprocessor):

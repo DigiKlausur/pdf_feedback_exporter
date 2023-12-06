@@ -1,7 +1,9 @@
-from .base import PDFPreprocessor
-from typing import Dict
 import os
+from typing import Dict
+
 import PyPDF2
+
+from .base import PDFPreprocessor
 
 
 class AddWatermark(PDFPreprocessor):

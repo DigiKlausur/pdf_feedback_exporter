@@ -1,6 +1,8 @@
-from .base import HTMLPreprocessor
-from typing import Tuple, Dict
+from typing import Dict, Tuple
+
 from bs4 import BeautifulSoup as Soup
+
+from .base import HTMLPreprocessor
 
 
 class FixMathLineBreaks(HTMLPreprocessor):

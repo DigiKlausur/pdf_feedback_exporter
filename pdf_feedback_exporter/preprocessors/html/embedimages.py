@@ -1,9 +1,10 @@
-import os
 import base64
+import os
+from typing import Dict, Tuple
+
+from bs4 import BeautifulSoup as Soup
 
 from .base import HTMLPreprocessor
-from typing import Tuple, Dict
-from bs4 import BeautifulSoup as Soup
 
 
 class EmbedImages(HTMLPreprocessor):
